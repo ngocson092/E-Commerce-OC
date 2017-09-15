@@ -1,0 +1,87 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.pull-right {
+  float: left !important;
+}
+.pull-left {
+  float: right !important;
+}
+.text-left {
+	text-align: right !important;
+}
+.text-right {
+	text-align: left !important;
+}
+// Toggling content
+// -------------------------
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .hide-text();
+}
+.text-left{
+	text-align: right!important;
+}
+.text-right {
+	text-align: left!important;
+}
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
+.close {
+    float: left;
+}
+.input-group-btn > .btn + .btn {
+	margin-right: -4px;
+	margin-left: 0;
+}
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  .border-left-radius(0);
+}
+.input-group .form-control:first-child, .input-group-addon:first-child {
+    .border-right-radius(4px);
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: right;
+  margin-right: -20px;
+}
+.radio, .checkbox {
+	padding-right: 20px;
+}
+.media > .pull-left {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.caret {
+  margin-right: 2px;
+}
+.radio-inline, .checkbox-inline {
+	padding-right: 20px;
+}

@@ -1,0 +1,271 @@
+
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+#pav-mainnav { 
+	position: relative;
+	.dropdown{
+		&:hover > .dropdown-menu{
+			display: block;
+		}
+	}
+	.navbar {
+		border: none;
+		.navbar-collapse {
+			 padding-left: 0;
+			 padding-right: 0;
+		}
+		ul.nav{
+			 &  > li:hover > a,.caret {
+				background: none;
+               color: @theme-color-secondary;
+				&:before {
+				   width: 100%;
+				    .opacity(1);
+				}
+			}
+			&  > li:hover{
+				.caret{
+                    border-bottom-color: @theme-color-secondary;
+                    border-top-color: @theme-color-secondary;
+                }
+			}
+		 	& > li  > a {
+				text-transform: uppercase;
+				font-size:@font-size-base - 1;
+				z-index: 0;
+                padding: 24px 17px 20px;
+                color: #fff;
+				&:before {
+				   height: 100%;
+				    left: 50%;
+				    .opacity(0);
+				    top: 50%;
+				    .translate(-50%,-50%);
+				    width: 0;
+				    content: "";
+				    position: absolute;
+				    .transition(all 0.3s ease 0s);
+				    z-index: -1;
+				}
+		 	}
+		}
+	 }	
+	.dropdown-menu {
+        padding: 5px;
+        li{
+            a{
+            background: url('@{image-theme-path}circle-li.png') no-repeat 5px 5px;
+            padding: 3px 0 3px 20px;
+            line-height: 28px;
+            .transition(all 0.3s ease 0s);
+                &:hover {
+                    background-position:  5px -19px;
+                }
+            }
+        }
+    }
+	 .navbar-inverse .navbar-nav {
+	    > .open{
+		    	> a {      
+		    	background-color: @theme-color-secondary;
+			   
+			}
+	    } 
+	}
+    .mini-access{
+        line-height: 30px;
+        text-align: center;
+        a{
+            padding: 0px 5px;
+            border-right: 1px solid @gray;
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+}
+.navbar-nav {
+    .dropdown-menu {
+        border: none;
+        display: inline-block;
+        .opacity(0);
+        top: 50px;
+        transition: all 0.3s ease 0s;
+        visibility: hidden;
+        min-width: 230px;
+        & > .dropdown-menu-inner {
+          padding: 10px;
+        }
+        .row {
+          margin-bottom: 0 !important;
+        }
+        &:hover {
+          >  .dropdown-menu {
+
+          }
+        }
+    }
+    .dropdown {
+        &:hover {
+          > .dropdown-menu {
+            .opacity(1);
+            top: 63px;
+            visibility: inherit;
+            border-top: 3px solid @theme-color-secondary;
+          }
+        }
+        .dropdown-submenu {
+            &:hover {
+                .dropdown-menu {
+                    border-top: 3px solid @theme-color-secondary;
+                    top: 63px;
+                    .opacity(1);
+                    visibility: inherit;
+                }
+            }
+        }
+    }
+}
+
+.pav-megamenu {
+	ul.megamenu {
+        > li {
+            &.aligned-fullwidth {
+                position: static;
+                > .dropdown-menu  {
+                    width: 100%!important;
+                }
+                .dropdown-submenu .dropdown-menu {
+                    margin-left: 0;
+                }
+            }
+            &.aligned-right {
+                .dropdown-menu  {
+                    right:0;
+                    left:auto;
+                }
+                .dropdown-submenu .dropdown-menu {
+                    margin-right: 100%;
+                }
+            }
+            &.aligned-left {
+                .dropdown-menu  {                   
+                    right:auto;
+                    left:0;
+                }
+                .dropdown-submenu .dropdown-menu {
+                    margin-left: 100%;
+                } 
+            }
+            &.aligned-center {
+                .dropdown-menu  {
+                    left:50%;
+                    transform: translate(-50%);
+                } 
+                .dropdown-submenu .dropdown-menu {
+                    margin-left: 100%;
+                }               
+            }
+        }
+        
+    }
+    .nav .caret {
+    	border-top-color: #fff;
+        border-bottom-color: #fff;
+    }
+    .product-block {
+    	.product_quickview, .product-zoom, .product-hover {
+    		display: none;
+    	}
+    	&:hover {
+    		box-shadow: none;
+    	}
+    }
+	.dropdown-menu {
+        border: none;
+		& > .dropdown-menu-inner {
+			padding: 10px; 
+		}
+	}
+	.mega-group {
+		.caret{
+			display: none;
+		}
+		& > .dropdown-toggle {
+			display: block;
+			font-weight: bold;
+			padding: 6px 5px;
+			text-transform: uppercase;
+			border-bottom: solid 1px #E5E5E5 
+		}
+		
+		.dropdown-mega { 
+			 .mega-col-inner {
+				& > ul > li  {
+					a {
+						margin-left: 6px; 
+					}	
+				}
+			}
+		}
+	}
+	.mega-col {
+		  .mega-col-inner{
+			& > ul{
+				  list-style: none outside none;
+				  margin: 0;
+				  padding: 0;
+				  & > li {
+				  		list-style: none;
+				  		margin-left: 0;
+				  		& > a {
+							clear: both;
+							display: block;
+							line-height: 20px;
+
+				  		}
+				  }
+			}
+		}
+	}
+ 
+
+	.dropdown-submenu {
+		&:hover{
+			.dropdown-menu{
+				display: block;
+			}
+		}
+		& > .dropdown-menu {
+		    border-radius: 0 6px 6px 6px;
+		    left: 100%;
+		    margin-left: -6px;
+		    margin-top: -6px;
+		    top: 0;
+		}
+	}
+	.cols2{ width: 420px; }
+	.cols3{ width: 620px; }
+	.cols4{ width: 820px; }
+}
+.pavo-widget{
+    .menu-title{
+        color: @theme-color-default;
+        font-weight: bold;
+    }
+    li{
+        a{
+            line-height: 35px !important;
+            background-position: 5px -1px !important;
+            &:hover{
+              background-position: 5px -25px !important
+            }
+        }
+    }
+}

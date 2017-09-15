@@ -1,0 +1,23 @@
+.product-block .product-zoom {
+    background-color: #2A2F34;
+}
+.product-block .product_quickview {
+    background-color: #2A2F34;
+}
+.navbar-nav .dropdown-menu {
+    opacity: inherit;
+    visibility: inherit;
+    top: inherit;
+    display: none;
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.product-block .product-hover {
+	opacity: inherit !important;
+	visibility: inherit;
+	display: none;
+}
+.product-block:hover .product-hover {
+	display: block;
+}

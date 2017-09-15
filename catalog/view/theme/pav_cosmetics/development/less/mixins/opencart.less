@@ -1,0 +1,80 @@
+
+.border-exclude-top(@border-deep; @border-type ; @border-color ){
+	border-bottom: @border-deep @border-type @border-color ;
+    border-left: @border-deep @border-type @border-color ;
+    border-right: @border-deep @border-type @border-color ;
+
+}
+
+.border-exclude-bottom(@border-deep; @border-type ; @border-color ){
+	border-top: @border-deep @border-type @border-color ;
+    border-left: @border-deep @border-type @border-color ;
+    border-right: @border-deep @border-type @border-color ;
+
+}
+ 
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.clearboxstyle(){
+  background: none;
+  border:none;
+}
+
+.arrow-border-no-top(@bwidth:7px; @bcolor:#FFF; @width:7px; @height:7px){
+  border-bottom: @bwidth solid @bcolor;
+  border-left: @bwidth - 1  solid transparent;
+  border-right: @bwidth - 1 solid transparent;
+  width: @width;
+  height : @height;
+}
+
+/// button variant outline
+.button-variant-outline(@color, @background, @border, @colorhover, @bghover, @borderhover ) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: @colorhover;
+    background-color: @bghover;
+        border-color: @borderhover ;
+  }
+  .open & { &.dropdown-toggle {
+    color: @colorhover;
+    background-color: @bghover;
+        border-color: @borderhover ;
+  } }
+  &:active,
+  &.active {
+    background-image: none;
+  }
+  .open & { &.dropdown-toggle {
+    background-image: none;
+  } }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}

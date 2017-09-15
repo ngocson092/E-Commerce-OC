@@ -1,0 +1,110 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+// Center-align a block level element
+ 
+
+/* box */
+
+.box {
+    margin-bottom: @box-module-margin;
+    position: relative;
+    .box-heading {
+        background: url('@{image-theme-path}box-heading-bg.png') no-repeat left center;
+        padding-top: @box-module-heading-padding - 2 ;
+        padding-bottom: @box-module-heading-padding - 2 ;
+        padding-right:  @box-module-heading-padding + 20;
+        padding-left:  @box-module-heading-padding + 35;
+        font-family: @box-module-heading-font;
+        font-weight: 600;
+        font-size: @box-module-heading-fontsize;
+        position: relative;
+        margin-bottom: @box-module-margin + 3;
+        color: lighten(@theme-color-default , 20%);
+    }
+     .box-content {
+
+     }
+}
+.special {
+    .box-heading {
+        background: transparent;
+        padding-left: 0;
+        .fa {
+            background: #808080;
+            color: #fff;
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+            font-size: 13px;
+            text-align: center;
+            margin-right: 10px;
+            .rounded-corners(50%);
+        }
+    }
+}
+.sidebar {
+    .box.category{
+        margin-top: 0px;
+        .box-heading {
+            background: url('@{image-theme-path}box-heading-bg2.png') no-repeat left center;
+        }
+    }
+    .box {
+        .box-heading {
+            background: url('@{image-theme-path}box-heading-bg.png') no-repeat left center;
+            border:  none;
+            margin-bottom:  0;
+            font-weight: bold;
+            span{
+                color: @box-module-heading-color;
+                &:before {
+                    border-right: 24px solid transparent;
+                    border-top: 24px solid @box-module-badge;
+                    border-bottom: none;
+                    position: absolute;
+                    top: 0;
+                    bottom: inherit;
+                    width: 24px;
+                   text-decoration: uppercase;
+                }
+                span {
+                    color: @box-module-heading-color;
+                }
+            }
+        }
+
+    }
+    .banner{
+        margin-top: @theme-margin + 10;
+    }
+
+}
+        /* box styles */
+    .sidebar .box,
+    .box{ 
+        &.highlighted {
+            .box-heading{
+
+            }
+            li{
+                
+            }
+            a{
+                 
+            &:hover{
+                }
+            }
+        }
+        
+    }
+.box.special{
+    margin-top: 0;
+}
+  .navbar-form{
+      padding: 0;
+  }

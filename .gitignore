@@ -1,0 +1,6 @@
+/.idea
+/vqmod/vqcache
+/vqmod/mods.cache
+/composer.lock
+/vendor
+/database/cfg.php

@@ -1,0 +1,1 @@
+<?php require( PAVO_THEME_DIR."/template/common/config_layout.tpl" );  ?>

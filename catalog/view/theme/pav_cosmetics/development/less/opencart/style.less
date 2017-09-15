@@ -1,0 +1,213 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+.btn-theme-primary {
+	 background-color: @btn-theme-primary;
+	 border: none;
+	 color: #fff;
+	 &:hover{	
+	 	background-color: @btn-theme-primary-hover;
+	 	color: #fff;
+        border: none;
+	 }
+}
+.text-primary-theme {
+	color: @text-primary-theme;
+}
+.text-danger-theme {
+	color: @text-danger-theme;
+}
+
+.btn{
+    .rounded-corners(0px);
+}
+/* 
+ *
+ */
+.iconbox {
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 8px;
+    font-size: @font-size-base + 5;
+    width: 28px;
+    i {
+        padding-left: 5px;
+    }
+}
+.social {
+    margin: @theme-margin + 20 0;
+    overflow: hidden;
+    a{ 
+    	color: #fff!important;
+        .transition ( all 0.4s ease 0s);
+        &:hover{
+            .rounded-corners ( 15px );
+        }
+        &.pinterest {
+            background-color: #f13838;
+        }
+        &.facebook {
+            background-color: #395c8c;
+        }
+        &.google-plus { 
+            background-color: #f2532f;
+        }
+        &.twitter {
+            background-color: #5aceef;
+        }
+    }
+}
+
+.box-services {
+    font-size: @font-size-base + 3;
+    text-transform: uppercase;
+    .iconbox {
+        .rounded-corners( 20px );
+        height: 34px;
+        line-height: 34px;
+        width: 34px;
+        .box-shadow( 0 0 0 3px @theme-color-hover);
+        position: relative;
+        z-index: 1;
+        display:  inline-block;
+        &:after{
+            .rounded-corners( 20px );
+            background: repeat scroll 0 0 @theme-color-hover;
+            left: -2px;
+            padding: 2px;
+            top: -2px;
+            .transition ( all 0.4s ease 0s);
+            .box-sizing(content-box);
+            content: "";
+            height: 100%;
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            .opacity (1);
+        }
+        &:hover {
+            &:after{
+                .opacity (0);
+                .scale (0);
+                .transition (all 0.4s ease 0s);
+            }
+        }
+    } 
+    .btn-info{
+        background-color: transparent;
+         .box-shadow( 0 0 0 3px @brand-info);
+        &:after{
+            background: repeat scroll 0 0  @brand-info;
+        }
+        &:hover{
+            color:  @brand-info;           
+            color: #ffffff \9;
+        }
+    }
+}
+.box-media { 
+    .media {
+        color: #939393;
+        background-color: #fafafa;
+        border: 1px solid #f6f6f6;
+        padding: 10px;
+        a.pull-left{
+            margin-right: -45px;
+        }
+        a.pull-right{
+            margin-left: -45px;
+        }
+        .media-right {
+            text-align: right;
+           p{
+                margin-right: 0;
+                margin-left: 30px;
+            }
+        }
+        p {
+            margin-right: 30px;
+        }
+    }
+}
+.media-dark .media {
+    background-color: #efefef;
+    border: 1px solid #efefef;
+}
+.newsletter{
+    input ,button{
+        .rounded-corners( 0 );
+        line-height:  19px;
+        margin-top: @margin-base-vertical + 2px;
+    }
+    .navbar-form {
+        padding: 0;
+    }
+}
+div.required .control-label:before {
+    content: '* ';
+    color: #F00;
+    font-weight: bold;
+}
+.buttons {
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+/* Background body */
+.pattern1 {
+    background-image: url('@{image-theme-path-base}pattern/pattern1.png');
+}
+.pattern2 {
+    background-image: url('@{image-theme-path-base}pattern/pattern2.png');
+}
+.pattern3 {
+    background-image: url('@{image-theme-path-base}pattern/pattern3.png');
+}
+.pattern4 {
+    background-image: url('@{image-theme-path-base}pattern/pattern4.png');
+}
+.pattern5 {
+    background-image: url('@{image-theme-path-base}pattern/pattern5.png');
+}
+.pattern6 {
+    background-image: url('@{image-theme-path-base}pattern/pattern6.png');
+}
+.pattern7 {
+    background-image: url('@{image-theme-path-base}pattern/pattern7.png');
+}
+.pattern8 {
+    background-image: url('@{image-theme-path-base}pattern/pattern8.png');
+}
+.pattern9 {
+    background-image: url('@{image-theme-path-base}pattern/pattern9.png');
+}
+.pattern10 {
+    background-image: url('@{image-theme-path-base}pattern/pattern10.png');
+}
+.pattern11 {
+    background-image: url('@{image-theme-path-base}pattern/pattern11.png');
+}
+.pattern12 {
+    background-image: url('@{image-theme-path-base}pattern/pattern12.png');
+}
+.pattern13 {
+    background-image: url('@{image-theme-path-base}pattern/pattern13.png');
+}
+.pattern14 {
+    background-image: url('@{image-theme-path-base}pattern/pattern14.png');
+}
+.pattern15 {
+    background-image: url('@{image-theme-path-base}pattern/pattern15.png');
+}
+.pattern16 {
+    background-image: url('@{image-theme-path-base}pattern/pattern16.png');
+}
+
+/* End */

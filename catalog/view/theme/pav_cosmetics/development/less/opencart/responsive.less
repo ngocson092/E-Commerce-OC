@@ -1,0 +1,83 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+/*@media only screen and (min-width: 992px) and (max-width: 1199px){*/
+@media (min-width: @screen-md) and (max-width: @screen-md-max){ 
+    #pav-mainnav .navbar ul.nav > li > a {
+        padding: 24px 10px 20px;
+    }
+    #cart-total {
+    	font-size: 10px;
+    }
+    .product-block .product-hover .compare a, .product-block .product-hover .wishlist a {
+    	margin-left: 0;
+    	margin-right: 5px;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+	.zoomContainer,.product_quickview, .product-zoom {
+		display: none!important;
+	}
+    .product-block {
+    	.product-hover {
+    		position: static;
+    		padding: 0;
+    		.opacity (1);
+    	}
+    	&:hover {
+    		.product-hover {
+    			.box-shadow (none);
+    		}
+    	}
+    }
+    .box-module-pavreassurances {height: auto;
+    	h3 {
+    		font-size: 15px;
+    	}
+    	.gray {
+    		margin-top: 18px;
+    	}
+    }
+    .blog-item .description {
+    	max-height: 75px;
+    	overflow: hidden;
+    }
+}
+/*@media only screen and (min-width: 769px) and (max-width: 992px) {*/
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    
+}
+/*@media only screen and (max-width: 768px) {*/
+@media only screen and (max-width: @screen-xs-max) { 
+    
+}
+/*@media (max-width: 480px){*/
+@media (max-width: @screen-phone) {
+	.header-right > div {
+	    margin-right: 6px;
+	}
+	.header-main {
+		.inner {
+			width: 50%;
+		}
+		.inner-xs {
+		    display: none;
+		}
+	}
+	.product-filter .display > div {
+	    margin-bottom: 10px;
+	    width: 100%;
+	}
+	.filter-right {
+	    float: left !important;
+	}
+	ul.links li {
+		margin-right: 10px;
+	}
+}
