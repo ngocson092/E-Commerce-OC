@@ -1,0 +1,20 @@
+<modification>
+	<id>ADD TO CART REDIRECT TO CART</id>
+	<version>1.0.0</version>
+	<vqmver>2.0</vqmver>
+	<author>CREATIWEB.ES</author>
+	
+	<file name="catalog/view/theme/pav_cosmetics/template/product/product.tpl">
+		<operation>
+			<search position="after"><![CDATA[if (json['success']) {]]></search>
+			<add><![CDATA[
+						setTimeout(function(){
+							window.location.href = "/index.php?route=checkout/cart";
+						},200);
+					]]>
+	  </add>
+		</operation>
+	</file>
+
+
+</modification>
