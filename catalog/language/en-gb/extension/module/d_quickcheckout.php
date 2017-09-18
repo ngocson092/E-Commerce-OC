@@ -12,7 +12,7 @@ $_['title_shopping_cart'] 							= 'Sản Phẩm đã chọn';
 $_['description_shopping_сart'] 					= '';
 $_['text_login']									= 'Login';
 
-$_['placeholder_telephone'] 						= '050 123 45 54';
+$_['placeholder_telephone'] 						= '732-725-8112';
 
 $_['error_field_required'] 							= 'This field is required';
 $_['error_valid_telephone'] 						= 'Please enter a valid telephone number';

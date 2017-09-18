@@ -3666,7 +3666,7 @@ div.required .control-label:before {
 /*@media only screen and (min-width: 992px) and (max-width: 1199px){*/
 @media (min-width: 992px) and (max-width: 1199px) {
   #pav-mainnav .navbar ul.nav > li > a {
-    padding: 24px 10px 20px;
+    padding: 13px 10px 13px;
   }
   #cart-total {
     font-size: 10px;
@@ -3783,4 +3783,10 @@ div#sidebar-main.product-page {
 }
 #payment_address_shipping_address_input{
   opacity: 0;
+}
+
+
+#d_quickcheckout .btn-primary {
+  background: #7db641 !important;
+  border: 0 !important;
 }

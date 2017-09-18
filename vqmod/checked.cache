@@ -433,3 +433,10 @@ admin\view\template\dashboard\recent.tpl
 admin\view\template\common\dashboard.tpl
 catalog\model\total\voucher.php
 catalog\model\account\order.php
+admin\language\english\common\login.php
+admin\view\template\common\login.tpl
+admin\controller\localisation\location.php
+admin\language\english\localisation\location.php
+admin\view\template\localisation\location_list.tpl
+admin\language\english\localisation\country.php
+admin\view\template\localisation\country_list.tpl
