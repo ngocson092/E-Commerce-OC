@@ -24,7 +24,6 @@ define('DIR_LOGS', realpath(dirname(__FILE__)) .'/../system/logs/');
 define('DIR_CATALOG', realpath(dirname(__FILE__)) .'/../catalog/');
 define('DIR_MODIFICATION', realpath(dirname(__FILE__)) .'/../system/storage/modification/');
 
-
 if (file_exists('../database/cfg.php')) {
     require_once('../database/cfg.php');
 }

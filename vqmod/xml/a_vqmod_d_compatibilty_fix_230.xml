@@ -1,0 +1,208 @@
+<modification>
+    <id>d_compatibilty_fix_230</id>
+    <version>1.0.0</version>
+    <vqmver>2.1.1</vqmver>
+    <author>Dreamvention.com</author>
+	<file name="admin/controller/event/compatibility.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[$route = $part[1] . '/' . $part[2];]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 1]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 1
+			unset($part[0]);
+			$route = implode('/', $part);
+			]]></add>
+		</operation>
+		<!-- <operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace" offset="2"><![CDATA[if (!is_file(DIR_LANGUAGE . $this->config->get('config_language') . '/' . $route . '.php') && is_file(DIR_LANGUAGE . $this->config->get('config_language') . '/' . $part[1] . '/' . $part[2] . '.php')) {]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 2]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 2
+			$directories = array($this->config->get('config_admin_language'), $this->language->default, 'english');
+			
+			foreach ($directories as $directory) {
+				if (!is_file(DIR_LANGUAGE . $directory . '/' . $route . '.php') && is_file(DIR_LANGUAGE . $directory . '/' . $part[1] . '/' . $part[2] . '.php')) {
+					$route = $part[1] . '/' . $part[2];
+					break;
+				}
+	 		}
+ 		]]></add>
+		</operation> -->
+	</file>
+	<file name="admin/controller/extension/extension/feed.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/feed/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'feed/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'feed/' . $this->request->get['extension']);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/extension/extension/fraud.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/fraud/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'fraud/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'fraud/' . $this->request->get['extension']);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/extension/extension/module.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/module/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'module/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'module/' . $this->request->get['extension']);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/extension/extension/payment.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/payment/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'payment/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'payment/' . $this->request->get['extension']);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/extension/extension/shipping.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/shipping/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'shipping/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'shipping/' . $this->request->get['extension']);
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/extension/extension/theme.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/theme/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'theme/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'theme/' . $this->request->get['extension']);
+
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/extension/extension/total.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="after"><![CDATA[$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'extension/total/' . $this->request->get['extension']);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'access', 'total/' . $this->request->get['extension']);
+			$this->model_user_user_group->addPermission($this->user->getGroupId(), 'modify', 'total/' . $this->request->get['extension']);
+
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/controller/event/compatibility.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[$route = $part[1] . '/' . $part[2];]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 1]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 1
+			unset($part[0]);
+			$route = implode('/', $part);
+			]]></add>
+		</operation>
+		<!-- <operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace" offset="2"><![CDATA[if (!is_file(DIR_LANGUAGE . $this->config->get('config_language') . '/' . $route . '.php') && is_file(DIR_LANGUAGE . $this->config->get('config_language') . '/' . $part[1] . '/' . $part[2] . '.php')) {]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 2]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 2
+			$directories = array($this->config->get('config_admin_language'), $this->language->default, 'english');
+			
+			foreach ($directories as $directory) {
+				if (!is_file(DIR_LANGUAGE . $directory . '/' . $route . '.php') && is_file(DIR_LANGUAGE . $directory . '/' . $part[1] . '/' . $part[2] . '.php')) {
+					$route = $part[1] . '/' . $part[2];
+					break;
+				}
+	 		}
+ 		]]></add>
+		</operation> -->
+	</file>
+
+	<file name="system/library/cart/user.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[return in_array($value, $this->permission[$key]);]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml
+			$part = explode('/', $value);
+			unset($part[0]);
+			return (in_array($value, $this->permission[$key]) || in_array(implode('/', $part), $this->permission[$key])) ? true: false;
+			]]></add>
+		</operation>
+	</file>
+	<!-- <file name="system/library/language.php">
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[private $default = 'en-gb';]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 1]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 1
+			public $default = 'en-gb';
+			]]></add>
+		</operation>
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[$old_file = DIR_LANGUAGE . 'english/' . str_replace('extension/', '', $filename) . '.php';]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 2]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 2
+			]]></add>
+		</operation>
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace" offset="1"><![CDATA[} elseif (is_file($old_file)) {]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 2]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 2
+			]]></add>
+		</operation>
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[$old_file = DIR_LANGUAGE . $this->default . '/' . str_replace('extension/', '', $filename) . '.php';]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 3]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 3
+			]]></add>
+		</operation>
+		<operation error="skip" info="fix for 2.3.0.x">
+			<search position="replace"><![CDATA[$old_file = DIR_LANGUAGE . $this->directory . '/' . str_replace('extension/', '', $filename) . '.php';]]></search>
+			<ignoreif><![CDATA[//d_compatibilty_fix_230.xml 4]]></ignoreif>
+			<add><![CDATA[
+			//d_compatibilty_fix_230.xml 4
+			]]></add>
+		</operation>
+	</file> -->
+	<file name="system/config/catalog.php">
+         <operation error="skip" info="fix for 2.3.0.x">
+            <search position="after"><![CDATA[$_['action_event'] = array(]]></search>
+            <ignoreif><![CDATA[//d_compatibilty_fix_230.xml]]></ignoreif>
+            <add><![CDATA[
+            //d_compatibilty_fix_230.xml
+            'controller/extension/analytics/*/before' => 'event/compatibility/controller',
+            'controller/extension/captcha/*/before'   => 'event/compatibility/controller',
+            'controller/extension/feed/*/before'      => 'event/compatibility/controller',
+            'controller/extension/fraud/*/before'     => 'event/compatibility/controller',
+            'controller/extension/module/*/before'    => 'event/compatibility/controller',
+            'controller/extension/payment/*/before'   => 'event/compatibility/controller',
+            'controller/extension/recurring/*/before' => 'event/compatibility/controller',
+            'controller/extension/shipping/*/before'  => 'event/compatibility/controller',
+            'controller/extension/theme/*/before'     => 'event/compatibility/controller',
+            'controller/extension/total/*/before'     => 'event/compatibility/controller',
+            ]]></add>
+        </operation>
+    </file>
+</modification>

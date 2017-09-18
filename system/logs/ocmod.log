@@ -1,0 +1,534 @@
+2017-09-18 5:40:54 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: d_opencart_patch
+CODE: public function controller($route, $args = array()) {
+NOT FOUND!
+CODE: $controller = new $class($this->registry);
+LINE: 33
+CODE: public function controller($route, $data = array()) {
+LINE: 47
+CODE: $controller = new $class($this->registry);
+LINE: 78
+CODE: $file = DIR_LANGUAGE . $this->default . '/' . $filename . '.php';
+LINE: 28
+CODE: $parts = explode('/', str_replace('../', '', (string)$route));
+LINE: 29
+FILE: admin/controller/extension/module.php
+CODE: $this->load->controller('module/' . $this->request->get['extension'] . '/install');
+LINE: 41
+CODE: $this->load->controller('module/' . $this->request->get['extension'] . '/uninstall');
+LINE: 74
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/module/' . $value . '.php')) {
+LINE: 151
+CODE: $data['extensions'][] = array(
+LINE: 187
+CODE: $this->load->language('module/' . $extension);
+LINE: 178
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 255
+FILE: admin/controller/extension/shipping.php
+CODE: $this->load->controller('shipping/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('shipping/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/shipping/' . $value . '.php')) {
+LINE: 123
+CODE: $data['extensions'][] = array(
+LINE: 144
+CODE: $this->load->language('shipping/' . $extension);
+LINE: 148
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 206
+FILE: admin/controller/extension/payment.php
+CODE: $this->load->controller('payment/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('payment/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/payment/' . $value . '.php')) {
+LINE: 123
+CODE: $data['extensions'][] = array(
+LINE: 152
+CODE: $this->load->language('payment/' . $extension);
+LINE: 148
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 215
+FILE: admin/controller/extension/total.php
+CODE: $this->load->controller('total/' . $this->request->get['extension'] . '/install');
+LINE: 36
+CODE: $this->load->controller('total/' . $this->request->get['extension'] . '/uninstall');
+LINE: 64
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/total/' . $value . '.php')) {
+LINE: 121
+CODE: $data['extensions'][] = array(
+LINE: 142
+CODE: $this->load->language('total/' . $extension);
+LINE: 146
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 204
+FILE: admin/controller/extension/feed.php
+CODE: $this->load->controller('feed/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('feed/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/feed/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('feed/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/fraud.php
+CODE: $this->load->controller('fraud/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('fraud/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/fraud/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('fraud/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/analytics.php
+CODE: $this->load->controller('analytics/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('analytics/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/analytics/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('analytics/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/captcha.php
+CODE: $this->load->controller('captcha/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('captcha/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/captcha/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('captcha/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/error/permission.php
+CODE: $ignore = array(
+LINE: 48
+FILE: admin/../catalog/controller/checkout/shipping_method.php
+CODE: $quote = $this->{'model_shipping_' . $result['code']}->getQuote($this->session->data['shipping_address']);
+LINE: 17
+CODE: $this->load->model('shipping/' . $result['code']);
+LINE: 15
+FILE: admin/../catalog/controller/checkout/payment_method.php
+CODE: $this->{'model_total_' . $result['code']}->getTotal($total_data, $total, $taxes);
+LINE: 27
+CODE: $this->load->model('total/' . $result['code']);
+LINE: 25
+CODE: $this->{'model_total_' . $result['code']}->getTotal($total_data);
+NOT FOUND!
+CODE: $method = $this->{'model_payment_' . $result['code']}->getMethod($this->session->data['payment_address'], $total);
+LINE: 53
+CODE: $this->load->model('payment/' . $result['code']);
+LINE: 51
+CODE: if ($recurring) {
+LINE: 65
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('module/' . $code);
+LINE: 378
+----------------------------------------------------------------
+MOD: d_shopunity
+FILE: admin/controller/common/header.php
+CODE: public function index() {
+LINE: 7
+FILE: admin/view/template/common/header.tpl
+CODE: <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger pull-left"><?php echo $alerts; ?></span> <i class="fa fa-bell fa-lg"></i></a>
+LINE: 47
+CODE: <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php if($alerts > 0) { ?><span class="label label-danger pull-left"><?php echo $alerts; ?></span><?php } ?> <i class="fa fa-bell fa-lg"></i></a>
+NOT FOUND!
+----------------------------------------------------------------
+2017-09-18 5:44:19 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: d_opencart_patch
+CODE: public function controller($route, $args = array()) {
+NOT FOUND!
+CODE: $controller = new $class($this->registry);
+LINE: 33
+CODE: public function controller($route, $data = array()) {
+LINE: 47
+CODE: $controller = new $class($this->registry);
+LINE: 78
+CODE: $file = DIR_LANGUAGE . $this->default . '/' . $filename . '.php';
+LINE: 28
+CODE: $parts = explode('/', str_replace('../', '', (string)$route));
+LINE: 29
+FILE: admin/controller/extension/module.php
+CODE: $this->load->controller('module/' . $this->request->get['extension'] . '/install');
+LINE: 41
+CODE: $this->load->controller('module/' . $this->request->get['extension'] . '/uninstall');
+LINE: 74
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/module/' . $value . '.php')) {
+LINE: 151
+CODE: $data['extensions'][] = array(
+LINE: 187
+CODE: $this->load->language('module/' . $extension);
+LINE: 178
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 255
+FILE: admin/controller/extension/shipping.php
+CODE: $this->load->controller('shipping/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('shipping/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/shipping/' . $value . '.php')) {
+LINE: 123
+CODE: $data['extensions'][] = array(
+LINE: 144
+CODE: $this->load->language('shipping/' . $extension);
+LINE: 148
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 206
+FILE: admin/controller/extension/payment.php
+CODE: $this->load->controller('payment/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('payment/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/payment/' . $value . '.php')) {
+LINE: 123
+CODE: $data['extensions'][] = array(
+LINE: 152
+CODE: $this->load->language('payment/' . $extension);
+LINE: 148
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 215
+FILE: admin/controller/extension/total.php
+CODE: $this->load->controller('total/' . $this->request->get['extension'] . '/install');
+LINE: 36
+CODE: $this->load->controller('total/' . $this->request->get['extension'] . '/uninstall');
+LINE: 64
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/total/' . $value . '.php')) {
+LINE: 121
+CODE: $data['extensions'][] = array(
+LINE: 142
+CODE: $this->load->language('total/' . $extension);
+LINE: 146
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 204
+FILE: admin/controller/extension/feed.php
+CODE: $this->load->controller('feed/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('feed/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/feed/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('feed/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/fraud.php
+CODE: $this->load->controller('fraud/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('fraud/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/fraud/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('fraud/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/analytics.php
+CODE: $this->load->controller('analytics/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('analytics/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/analytics/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('analytics/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/captcha.php
+CODE: $this->load->controller('captcha/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('captcha/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/captcha/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('captcha/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/error/permission.php
+CODE: $ignore = array(
+LINE: 48
+FILE: admin/../catalog/controller/checkout/shipping_method.php
+CODE: $quote = $this->{'model_shipping_' . $result['code']}->getQuote($this->session->data['shipping_address']);
+LINE: 17
+CODE: $this->load->model('shipping/' . $result['code']);
+LINE: 15
+FILE: admin/../catalog/controller/checkout/payment_method.php
+CODE: $this->{'model_total_' . $result['code']}->getTotal($total_data, $total, $taxes);
+LINE: 27
+CODE: $this->load->model('total/' . $result['code']);
+LINE: 25
+CODE: $this->{'model_total_' . $result['code']}->getTotal($total_data);
+NOT FOUND!
+CODE: $method = $this->{'model_payment_' . $result['code']}->getMethod($this->session->data['payment_address'], $total);
+LINE: 53
+CODE: $this->load->model('payment/' . $result['code']);
+LINE: 51
+CODE: if ($recurring) {
+LINE: 65
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('module/' . $code);
+LINE: 378
+----------------------------------------------------------------
+MOD: d_shopunity
+FILE: admin/controller/common/header.php
+CODE: public function index() {
+LINE: 7
+FILE: admin/view/template/common/header.tpl
+CODE: <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger pull-left"><?php echo $alerts; ?></span> <i class="fa fa-bell fa-lg"></i></a>
+LINE: 47
+CODE: <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php if($alerts > 0) { ?><span class="label label-danger pull-left"><?php echo $alerts; ?></span><?php } ?> <i class="fa fa-bell fa-lg"></i></a>
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+LINE: 130
+CODE: $output = $template->render($route . '.tpl'
+NOT FOUND!
+----------------------------------------------------------------
+2017-09-18 5:46:17 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 59
+LINE: 80
+LINE: 99
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Ajax Quick Checkout
+FILE: admin/../catalog/controller/checkout/checkout.php
+CODE: if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/checkout.tpl')) {
+LINE: 89
+CODE: $this->response->setOutput($this->load->view('checkout/checkout', $data));
+NOT FOUND!
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 92
+FILE: system/library/tax.php
+CODE: final class Tax {
+LINE: 7
+----------------------------------------------------------------
+MOD: d_opencart_patch
+CODE: public function controller($route, $args = array()) {
+NOT FOUND!
+CODE: $controller = new $class($this->registry);
+LINE: 33
+CODE: public function controller($route, $data = array()) {
+LINE: 47
+CODE: $controller = new $class($this->registry);
+LINE: 78
+CODE: $file = DIR_LANGUAGE . $this->default . '/' . $filename . '.php';
+LINE: 28
+CODE: $parts = explode('/', str_replace('../', '', (string)$route));
+LINE: 29
+FILE: admin/controller/extension/module.php
+CODE: $this->load->controller('module/' . $this->request->get['extension'] . '/install');
+LINE: 41
+CODE: $this->load->controller('module/' . $this->request->get['extension'] . '/uninstall');
+LINE: 74
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/module/' . $value . '.php')) {
+LINE: 151
+CODE: $data['extensions'][] = array(
+LINE: 187
+CODE: $this->load->language('module/' . $extension);
+LINE: 178
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 255
+FILE: admin/controller/extension/shipping.php
+CODE: $this->load->controller('shipping/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('shipping/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/shipping/' . $value . '.php')) {
+LINE: 123
+CODE: $data['extensions'][] = array(
+LINE: 144
+CODE: $this->load->language('shipping/' . $extension);
+LINE: 148
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 206
+FILE: admin/controller/extension/payment.php
+CODE: $this->load->controller('payment/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('payment/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/payment/' . $value . '.php')) {
+LINE: 123
+CODE: $data['extensions'][] = array(
+LINE: 152
+CODE: $this->load->language('payment/' . $extension);
+LINE: 148
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 215
+FILE: admin/controller/extension/total.php
+CODE: $this->load->controller('total/' . $this->request->get['extension'] . '/install');
+LINE: 36
+CODE: $this->load->controller('total/' . $this->request->get['extension'] . '/uninstall');
+LINE: 64
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/total/' . $value . '.php')) {
+LINE: 121
+CODE: $data['extensions'][] = array(
+LINE: 142
+CODE: $this->load->language('total/' . $extension);
+LINE: 146
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 204
+FILE: admin/controller/extension/feed.php
+CODE: $this->load->controller('feed/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('feed/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/feed/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('feed/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/fraud.php
+CODE: $this->load->controller('fraud/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('fraud/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/fraud/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('fraud/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/analytics.php
+CODE: $this->load->controller('analytics/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('analytics/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/analytics/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('analytics/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/extension/captcha.php
+CODE: $this->load->controller('captcha/' . $this->request->get['extension'] . '/install');
+LINE: 37
+CODE: $this->load->controller('captcha/' . $this->request->get['extension'] . '/uninstall');
+LINE: 66
+CODE: if (!file_exists(DIR_APPLICATION . 'controller/captcha/' . $value . '.php')) {
+LINE: 118
+CODE: $data['extensions'][] = array(
+LINE: 139
+CODE: $this->load->language('captcha/' . $extension);
+LINE: 143
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 199
+FILE: admin/controller/error/permission.php
+CODE: $ignore = array(
+LINE: 48
+FILE: admin/../catalog/controller/checkout/shipping_method.php
+CODE: $quote = $this->{'model_shipping_' . $result['code']}->getQuote($this->session->data['shipping_address']);
+LINE: 17
+CODE: $this->load->model('shipping/' . $result['code']);
+LINE: 15
+FILE: admin/../catalog/controller/checkout/payment_method.php
+CODE: $this->{'model_total_' . $result['code']}->getTotal($total_data, $total, $taxes);
+LINE: 27
+CODE: $this->load->model('total/' . $result['code']);
+LINE: 25
+CODE: $this->{'model_total_' . $result['code']}->getTotal($total_data);
+NOT FOUND!
+CODE: $method = $this->{'model_payment_' . $result['code']}->getMethod($this->session->data['payment_address'], $total);
+LINE: 53
+CODE: $this->load->model('payment/' . $result['code']);
+LINE: 51
+CODE: if ($recurring) {
+LINE: 65
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('module/' . $code);
+LINE: 378
+----------------------------------------------------------------
+MOD: d_shopunity
+FILE: admin/controller/common/header.php
+CODE: public function index() {
+LINE: 7
+FILE: admin/view/template/common/header.tpl
+CODE: <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="label label-danger pull-left"><?php echo $alerts; ?></span> <i class="fa fa-bell fa-lg"></i></a>
+LINE: 47
+CODE: <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php if($alerts > 0) { ?><span class="label label-danger pull-left"><?php echo $alerts; ?></span><?php } ?> <i class="fa fa-bell fa-lg"></i></a>
+NOT FOUND!
+----------------------------------------------------------------
+MOD: d_twig_manager
+CODE: $file = DIR_TEMPLATE . $template;
+LINE: 130
+CODE: $output = $template->render($route . '.tpl'
+NOT FOUND!
+----------------------------------------------------------------

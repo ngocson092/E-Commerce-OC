@@ -1,0 +1,346 @@
+{
+    "codename": "d_shopunity",
+    "version": "3.1.0",
+    "name": "Shopunity Extension manager",
+    "description": "Allows the user to connect his opencart store to shopunity network and purchase modules with ease",
+    "index": "module/d_shopunity",
+    "readme": "system/mbooth/readme/d_shopunity.md",
+    "author": {
+        "name": "Shopunity",
+        "email": "info@shopunity.com",
+        "url": "https://shopunity.net/"
+    },
+    "opencart_version": [
+        "2.0.0.0",
+        "2.0.1.1",
+        "2.0.1.1",
+        "2.0.2.0",
+        "2.0.3.1",
+        "2.1.0.1",
+        "2.1.0.2",
+        "2.2.0.0",
+        "2.3.0.2"
+    ],
+    "mbooth_version": "^4.0.0",
+    "type": "module",
+    "license": {
+        "type": "free",
+        "url": "https://shopunity.net/licenses/free"
+    },
+    "install": {
+        "url": "extension/module/install&extension=d_shopunity"
+    },
+    "uninstall": {
+        "url": "extension/module/uninstall&extension=d_shopunity"
+    },
+    "support": {
+        "email": "support@shopunity.com",
+        "url": "https://shopunity.net/"
+    },
+    "files": [
+        "system/mbooth/extension/d_shopunity.json",
+        "system/mbooth/install/d_shopunity.xml",
+        "system/mbooth/install/d_shopunity_oc2_patch.xml",
+        "system/mbooth/install/d_shopunity_oc230_patch.xml",
+        "system/mbooth/install/d_shopunity.php",
+        "system/mbooth/install/d_shopunity.sql",
+        "system/mbooth/readme/d_shopunity.md",
+        "system/mbooth/download/index.php",
+        "system/mbooth/backup/index.php",
+
+        "admin/controller/module/d_shopunity.php",
+        "admin/language/english/module/d_shopunity.php",
+        "admin/view/template/module/d_shopunity.tpl",
+
+        "system/library/deploy_bitbucket.php",
+        "system/library/deploy_github.php",
+        "system/library/shopunity.php",
+        "system/library/modulegenerator.php",
+        "system/library/semver.php"
+    ],
+    "dirs": [
+        "admin/controller/d_shopunity",
+        "admin/language/english/d_shopunity",
+        "admin/model/d_shopunity",
+
+        "admin/view/template/d_shopunity",
+        "admin/view/javascript/d_shopunity",
+        "admin/view/stylesheet/d_shopunity",
+
+        "catalog/controller/d_shopunity",
+        "catalog/model/d_shopunity",
+
+        "system/library/httpful",
+        "system/library/semver",
+
+        "system/library/hyperlight",
+        "admin/view/stylesheet/shopunity",
+        "admin/view/javascript/shopunity"
+    ],
+    "changelog": [
+        {
+            "version":"3.1.0",
+            "change": "1. Added d_shopunity_oc2_patch"
+        },
+        {
+            "version":"3.0.57",
+            "change": "1. Added isense labs support. Added ocmod install/uninstall"
+        },
+        {
+            "version":"3.0.56",
+            "change": "1.Added vouchers in billing/invoice "
+        },
+        {
+            "version":"3.0.55",
+            "change": "1.Added packs. 2.Added library type"
+        },
+        {
+            "version":"3.0.54",
+            "change": "1. Added external order support and vouchers"
+        },
+        {
+            "version":"3.0.53",
+            "change": "1. Validate zip php extension. 2. Added Shopunity update widget"
+        },
+        {
+            "version":"3.0.52",
+            "change": "1. Hot fix"
+        },
+        {
+            "version":"3.0.51",
+            "change": "1. Added d_shopunity widget"
+        },
+        {
+            "version":"3.0.50",
+            "change": "1. Fix folder deletion, 2. Added d_shopunity/extension/thumb function"
+        },
+        {
+            "version":"3.0.49",
+            "change": "1. fix 2.3.x localisation language"
+        },
+        {
+            "version":"3.0.48",
+            "change": "1. fix first install"
+        },
+        {
+            "version":"3.0.47",
+            "change": "1. fix validation of ^"
+        },
+        {
+            "version":"3.0.46",
+            "change": "1. Replaced with Composer/Semver"
+        },
+        {
+            "version":"3.0.45",
+            "change": "1. Fixes"
+        },
+        {
+            "version":"3.0.44",
+            "change": "1. Installation fix 2.3.0.x."
+        },
+        {
+            "version":"3.0.43",
+            "change": "1. Errors fixed."
+        },
+        {
+            "version":"3.0.42",
+            "change": "1. Fix ocmod name var. added events."
+        },
+        {
+            "version":"3.0.41",
+            "change": "1. Fix ocmod maintenence refresh cache"
+        },
+        {
+            "version":"3.0.40",
+            "change": "1. Fix Support 2.0.x ocmod"
+        },
+        {
+            "version":"3.0.39",
+            "change": "1. Support 2.0.x ocmod"
+        },
+        {
+            "version":"3.0.38",
+            "change": "1. Support 2.0.0.0 ocmod"
+        },
+        {
+            "version":"3.0.37",
+            "change": "1. Install ocmod xmls"
+        },
+        {
+            "version":"3.0.36",
+            "change": "1. Install ocmod xmls"
+        },
+        {
+            "version":"3.0.35",
+            "change": "1. Fix lite version in model/mbooth"
+        },
+        {
+            "version":"3.0.34",
+            "change": "1. Fix Module Generator feature"
+        },
+        {
+            "version":"3.0.33",
+            "change": "1. Added Module Generator feature"
+        },
+        {
+            "version":"3.0.32",
+            "change": "1. Small fixes and debug"
+        },
+        {
+            "version":"3.0.31",
+            "change": "1. Small fixes and debug"
+        },
+        {
+            "version":"3.0.30",
+            "change": "1. Small fixes and debug"
+        },
+        {
+            "version":"3.0.29",
+            "change": "1. Small fixes and debug"
+        },
+        {
+            "version":"3.0.28",
+            "change": "1. Refactored API and install process"
+        },
+        {
+            "version":"3.0.27",
+            "change": "1. bug fixes \r\n 2. Deploy through shopunity"
+        },
+        {
+            "version":"3.0.26",
+            "change": "1. bug fixes"
+        },
+        {
+            "version":"3.0.25",
+            "change": "1. conflict fix \r\n 2. Added filemanager \r\n3. System update"
+        },
+        {
+            "version":"3.0.24",
+            "change": "1. works from localhost"
+        },
+        {
+            "version":"3.0.23",
+            "change": "1. more fixes"
+        },
+        {
+            "version":"3.0.22",
+            "change": "1. testing developer update function"
+        },
+        {
+            "version":"3.0.21",
+            "change": "1. developer"
+        },
+        {
+            "version":"3.0.20",
+            "change": "1. Unknown module fix"
+        },
+        {
+            "version":"3.0.19",
+            "change": "1. added paging"
+        },
+        {
+            "version":"3.0.17",
+            "change": "1. added status"
+        },
+        {
+            "version":"3.0.16",
+            "change": "1. added cancel"
+        },
+        {
+            "version":"3.0.15",
+            "change": "1. added refund"
+        },
+        {
+            "version":"3.0.14",
+            "change": "1. style fixes"
+        },
+        {
+            "version":"3.0.13",
+            "change": "1. corrected some styling"
+        },
+        {
+            "version":"3.0.12",
+            "change": "1. added dependencies validate"
+        },
+        {
+            "version":"3.0.11",
+            "change": "1. added uninstall function"
+        },
+        {
+            "version":"3.0.10",
+            "change": "1. install dependencies added \r\n 2. Removed elfinder - separate extension. \r\n 3. Semver added"
+        },
+        {
+            "version":"3.0.9",
+            "change": "1. fix download"
+        },
+        {
+            "version":"3.0.8",
+            "change": "1. style fixes"
+        },
+        {
+            "version":"3.0.7",
+            "change": "1. fixed a_vqmod_d_compatibilty_fix_230"
+        },
+        {
+            "version":"3.0.6",
+            "change": "1. Removed a_vqmod_d_shopunity.xml - depricated"
+        },
+        {
+            "version":"3.0.5",
+            "change": "1. fixed catalog compatiblity fix to 2.3.0.2"
+        },
+        {
+            "version":"3.0.4",
+            "change": "1. Added compatiblity fix to 2.3.0.2"
+        },
+        {
+            "version":"3.0.3",
+            "change": "1. bug fixes"
+        },
+        {
+            "version":"3.0.2",
+            "change": "1. bug fixes"
+        },
+        {
+            "version":"3.0.0",
+            "change": "1. Implemented extension.json instead of mbooth.xml \r\n 2. Integrated mbooth into shopunity"
+        },
+        {
+            "version":"2.5.0",
+            "change": "1. added bootbox.js"
+        },
+        {
+            "version":"2.4.0",
+            "change": "1. added star rating \r\n 2. x-editable \r\n 3. tagsinput"
+        },
+        {
+            "version":"2.3.0",
+            "change": "underscroe added (1.8.3) \r\n 2. backbone added (1.2.3)"
+        },
+        {
+            "version":"2.2.0",
+            "change": "1. bootstrap-colorpicker \r\n 2. bootstrap-editable\r\n 3. bootstrap-slider\r\n 4. bootstrap-sortable\r\n 5. bootstrap-switch\r\n 6. serializeObjact"
+        },
+        {
+            "version":"2.1.0",
+            "change": "1. rubaxa-sortable \r\n 2. style fixes"
+        },
+        {
+            "version":"2.0.2",
+            "change": "1. added margins and paddings"
+        },
+        {
+            "version":"2.0.1",
+            "change": "1. Added interect.js"
+        },
+        {
+            "version":"2.0.0",
+            "change": "1. Added compatiblity with version 2.0 bootstrap"
+        },
+        {
+            "version":"1.1.0",
+            "change": "1. Bug fixes"
+        }
+    ]
+}

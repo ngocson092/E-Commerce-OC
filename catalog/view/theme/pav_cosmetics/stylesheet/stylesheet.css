@@ -3757,3 +3757,6 @@ div#sidebar-main.product-page {
   color: #eb557b;
   font-weight: 100;
 }
+#login_view{
+  display: none;
+}

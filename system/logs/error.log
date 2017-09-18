@@ -60,3 +60,76 @@
 2017-09-15 13:11:21 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
 2017-09-15 13:22:21 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
 2017-09-15 13:24:51 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:28:13 - PHP Notice:  Use of undefined constant DIR_UPLOAD - assumed 'DIR_UPLOAD' in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-admin_controller_extension_installer.php on line 38
+2017-09-18 5:28:22 - PHP Warning:  file_get_contents(D:\Kantek\opencart\travytea\admin/../admin/mbooth/xml/mbooth_quickcheckout.xml): failed to open stream: No such file or directory in D:\Kantek\opencart\travytea\admin\controller\module\quickcheckout.php on line 581
+2017-09-18 5:28:54 - PHP Notice:  Error: Could not load config quickcheckout_settings! in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-system_library_config.php on line 27
+2017-09-18 5:29:37 - PHP Notice:  Error: Could not load model D:\Kantek\opencart\travytea\admin/model/setting/extension.php! in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-system_engine_loader.php on line 63
+2017-09-18 5:33:42 - PHP Notice:  Use of undefined constant DIR_UPLOAD - assumed 'DIR_UPLOAD' in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-admin_controller_extension_installer.php on line 38
+2017-09-18 5:40:57 - PHP Notice:  Error: Could not load model D:\Kantek\opencart\travytea\admin/model/setting/extension.php! in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-system_storage_modification_system_engine_loader.php on line 114
+2017-09-18 5:41:30 - PHP Notice:  Error: Could not load model D:\Kantek\opencart\travytea\admin/model/setting/extension.php! in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-system_storage_modification_system_engine_loader.php on line 114
+2017-09-18 5:44:23 - PHP Notice:  Error: Could not load model D:\Kantek\opencart\travytea\admin/model/setting/extension.php! in D:\Kantek\opencart\travytea\vqmod\vqcache\vq2-system_storage_modification_system_engine_loader.php on line 114
+2017-09-18 5:45:45 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:45:46 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:45:48 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:51:28 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:53:05 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:54:32 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:57:16 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:57:40 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:57:51 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 5:57:51 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:02 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:03 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:03 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:12 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:12 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:13 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:22 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:22 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:00:23 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:06:55 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:06:56 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:06:56 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:08:08 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:08:09 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:08:09 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:08:47 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:08:47 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:08:48 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:16:23 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:16:24 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:16:24 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:17:35 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:17:35 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:17:36 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:17:37 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:17:38 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:17:38 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:18:05 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:18:05 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:18:06 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:18:34 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:18:34 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:18:35 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:23:00 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:23:01 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:23:01 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:24:42 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:19 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:33 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:35 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:37 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:39 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:43 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\Kantek\opencart\travytea\system\library\mail.php on line 164
+2017-09-18 6:25:58 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:25:59 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:26:02 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:26:02 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:26:03 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:26:53 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:26:54 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:26:54 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:27:58 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:28:30 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:28:31 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
+2017-09-18 6:28:32 - PHP Notice:  Undefined index: key in D:\Kantek\opencart\travytea\catalog\view\theme\pav_cosmetics\template\common\cart.tpl on line 31
