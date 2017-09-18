@@ -92,7 +92,8 @@
           </table>
         </div>
       </form>
-      <?php if ($coupon || $voucher || $reward || $shipping) { ?>
+      <?php /*if ($coupon || $voucher || $reward || $shipping) { */ ?>
+       <?php if (1==2) {  ?>
       <h2><?php echo $text_next; ?></h2>
       <p><?php echo $text_next_choice; ?></p>
       <div class="panel-group" id="accordion"><?php echo $coupon; ?><?php echo $voucher; ?><?php echo $reward; ?><?php echo $shipping; ?></div>
