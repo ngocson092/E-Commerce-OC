@@ -810,6 +810,13 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['mpn'] = '';
 		}
+		if (isset($this->request->post['shipping_cost'])) {
+			$data['shipping_cost'] = $this->request->post['shipping_cost'];
+		} elseif (!empty($product_info)) {
+			$data['shipping_cost'] = $product_info['shipping_cost'];
+		} else {
+			$data['shipping_cost'] = 0;
+		}
 
 		if (isset($this->request->post['location'])) {
 			$data['location'] = $this->request->post['location'];

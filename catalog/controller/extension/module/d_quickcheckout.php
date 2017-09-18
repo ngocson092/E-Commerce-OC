@@ -195,6 +195,7 @@ $this->load->model('extension/d_quickcheckout/address');
 
 
 
+        $data['account']['guest']['payment_method']['display'] = 0;
 
         $data['account']['guest']['payment_address']['fields']['customer_group_id']['display'] = 0;
         $data['account']['guest']['confirm']['display'] = 0;

@@ -93,6 +93,13 @@ class ControllerShippingItem extends Controller {
 			$data['item_status'] = $this->config->get('item_status');
 		}
 
+		if (isset($this->request->post['item_enable_cost_by_product'])) {
+
+			$data['item_enable_cost_by_product'] = $this->request->post['item_enable_cost_by_product'];
+		} else {
+			$data['item_enable_cost_by_product'] = $this->config->get('item_enable_cost_by_product');
+		}
+
 		if (isset($this->request->post['item_sort_order'])) {
 			$data['item_sort_order'] = $this->request->post['item_sort_order'];
 		} else {

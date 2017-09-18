@@ -3757,6 +3757,27 @@ div#sidebar-main.product-page {
   color: #eb557b;
   font-weight: 100;
 }
-#login_view{
+#login_view,#payment_method,#shipping_method_form{
   display: none;
+}
+#payment_view input{padding: 3px;}
+#payment_view td{
+  padding: 3px 10px !important;
+}
+#payment_view h2 {
+  display: none;
+  font-size: 18px !important;
+  text-align: center;
+}
+#payment_view {
+  padding: 10px;
+  background: #ebf1f7;
+  border: 1px solid #989696;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+#payment_address_shipping_address_input{
+  opacity: 0;
 }

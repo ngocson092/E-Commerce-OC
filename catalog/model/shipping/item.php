@@ -26,12 +26,23 @@ class ModelShippingItem extends Model {
 
 			$quote_data = array();
 
+            $text = $this->currency->format($this->tax->calculate($this->config->get('item_cost') * $items, $this->config->get('item_tax_class_id'), $this->config->get('config_tax')));
+            $cost = $this->config->get('item_cost') * $items;
+
+            if($this->config->get('item_enable_cost_by_product')){
+                $cost = 0;
+                foreach ($this->cart->getProducts() as $product) {
+                   $cost += $product['shipping_cost'] * $product['quantity'];
+                }
+                $text = $this->currency->format($cost, $this->config->get('item_tax_class_id'), $this->config->get('config_tax'));
+            }
+
 			$quote_data['item'] = array(
 				'code'         => 'item.item',
 				'title'        => $this->language->get('text_description'),
-				'cost'         => $this->config->get('item_cost') * $items,
+				'cost'         => $cost,
 				'tax_class_id' => $this->config->get('item_tax_class_id'),
-				'text'         => $this->currency->format($this->tax->calculate($this->config->get('item_cost') * $items, $this->config->get('item_tax_class_id'), $this->config->get('config_tax')))
+				'text'         => $text
 			);
 
 			$method_data = array(
