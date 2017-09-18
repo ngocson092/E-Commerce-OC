@@ -27,7 +27,7 @@
 							</div>
 						</div>
 		  			</div>
-		  			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-9 header-left">
+		  			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-9 header-left hidden">
 		  				<ul class="login links pull-right">
 		  					<?php if ($logged) { ?>
 								<li><a href="<?php echo $logout; ?>"><i class="fa-fw fa fa-unlock"></i><span class="hidden-xs"><?php echo $text_logout; ?></span></a>
@@ -119,10 +119,8 @@
 					</div>
 				<!-- { megamenu -->
 				</div>
-				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 inner-xs">
-					<?php echo $search; ?>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 inner-xs">
+
+				<div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 inner-xs">
 					<div class="shopping-cart">
 						<?php echo $cart; ?>
 					</div>

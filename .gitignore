@@ -4,3 +4,4 @@
 /composer.lock
 /vendor
 /database/cfg.php
+/vqmod/logs

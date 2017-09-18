@@ -1,6 +1,6 @@
 <?php 
 
-$_['option_register_payment_address_title']  		= 'Payment details';
+$_['option_register_payment_address_title']  		= 'Thông tin Thanh Toán';
 $_['option_register_payment_address_description']  	= '';
 $_['option_register_shipping_address_title']  		= 'Delivery details';
 $_['option_register_shipping_address_description']  = '';
@@ -8,7 +8,7 @@ $_['option_register_shipping_method_title']  		= 'Shipping method';
 $_['option_register_payment_method_title'] 			= 'Payment method';
 $_['option_register_cart_description'] 				= '';
 
-$_['option_guest_payment_address_title']  			= 'Payment details';
+$_['option_guest_payment_address_title']  			= 'Payment details1';
 $_['option_guest_payment_address_description']  	= '';
 $_['option_guest_shipping_address_title']  			= 'Delivery details';
 $_['option_guest_shipping_address_description'] 	= '';

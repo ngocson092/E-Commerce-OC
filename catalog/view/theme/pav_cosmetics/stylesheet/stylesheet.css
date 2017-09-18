@@ -1242,6 +1242,8 @@ header#header-main{
 .header-right {
   padding-right: 0;
   /* display: none; */
+  width: 100%;
+  text-align: center;
 }
 .header-right > div {
   margin-right: 20px;
@@ -1637,6 +1639,7 @@ header#header-main{
   padding: 15px;
   right: 0;
   left: auto;
+  width: 400px;
 }
 #cart .checkout {
   text-align: right;

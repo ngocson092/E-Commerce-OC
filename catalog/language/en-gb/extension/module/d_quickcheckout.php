@@ -1,6 +1,6 @@
 <?php 
 
-$_['title_payment_address']  						= 'Payment details';
+$_['title_payment_address']  						= 'Thông tin Thanh Toán';
 $_['description_payment_address']  					= '';
 $_['title_shipping_address']  						= 'Delivery details';
 $_['description_shipping_address'] 					= '';
@@ -8,7 +8,7 @@ $_['title_shipping_method']  						= 'Shipping method';
 $_['description_shipping_method'] 					= '';
 $_['title_payment_method'] 							= 'Payment method';
 $_['description_payment_method'] 					= '';
-$_['title_shopping_cart'] 							= 'Shopping cart';
+$_['title_shopping_cart'] 							= 'Sản Phẩm đã chọn';
 $_['description_shopping_сart'] 					= '';
 $_['text_login']									= 'Login';
 
