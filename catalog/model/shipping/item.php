@@ -31,8 +31,10 @@ class ModelShippingItem extends Model {
 
             if($this->config->get('item_enable_cost_by_product')){
                 $cost = 0;
-                foreach ($this->cart->getProducts() as $product) {
-                   $cost += $product['shipping_cost'] * $product['quantity'];
+                if($items < 6){
+                    foreach ($this->cart->getProducts() as $product) {
+                        $cost += $product['shipping_cost'] * $product['quantity'];
+                    }
                 }
                 $text = $this->currency->format($cost, $this->config->get('item_tax_class_id'), $this->config->get('config_tax'));
             }
