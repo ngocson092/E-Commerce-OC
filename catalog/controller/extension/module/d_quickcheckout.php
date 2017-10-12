@@ -209,7 +209,7 @@ $this->load->model('extension/d_quickcheckout/address');
         $data['design']['column_width'][4]  = 7;
 
 
-        if($this->session->data['shipping_method']['code']=='free.free'){
+        if(isset($this->session->data['shipping_method']) && $this->session->data['shipping_method']['code']=='free.free'){
             $data['account']['guest']['shipping_method']['display'] = 0;
         }
 
