@@ -440,3 +440,13 @@ admin\language\english\localisation\location.php
 admin\view\template\localisation\location_list.tpl
 admin\language\english\localisation\country.php
 admin\view\template\localisation\country_list.tpl
+admin\controller\shipping\free.php
+admin\view\template\shipping\free.tpl
+catalog\model\shipping\free.php
+catalog\language\english\shipping\free.php
+admin\view\template\shipping\flat.tpl
+admin\language\english\shipping\slow.php
+admin\controller\shipping\slow.php
+admin\view\template\shipping\slow.tpl
+catalog\model\shipping\slow.php
+catalog\language\english\shipping\slow.php

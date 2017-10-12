@@ -1,8 +1,11 @@
 <div id="shipping_method" class="qc-step" data-col="{{ col }} " data-row="{{ row }} "></div>
 <script type="text/html" id="shipping_method_template">
 
-<form id="shipping_method_form" <%= parseInt(model.config.display) && model.show_shipping_method ? '' : 'class="hidden"' %>>
-	<% if (model.shipping_methods.length != 0 ) { %>
+<form id="shipping_method_form" <%= parseInt(model.config.display) && model.show_shipping_method && (Object.keys(model.shipping_methods).indexOf('free') == -1) ? '' : 'class="hidden"' %>>
+
+
+<% console.log(Object.keys(model.shipping_methods).indexOf('free')); %>
+<% if (model.shipping_methods.length != 0) { %>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -79,6 +82,7 @@
    <% } %>
 	<% } %>
 </form>
+
 </script>
 <script>
 $(function() {
@@ -90,3 +94,4 @@ $(function() {
 	}));
 });
 </script>
+

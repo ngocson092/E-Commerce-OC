@@ -37,6 +37,9 @@ class ModelShippingFree extends Model {
 				'sort_order' => $this->config->get('free_sort_order'),
 				'error'      => false
 			);
+
+            $this->session->data['shipping_method'] = $method_data;
+
 		}
 
 		return $method_data;

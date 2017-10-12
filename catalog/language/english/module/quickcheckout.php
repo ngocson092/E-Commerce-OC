@@ -12,7 +12,7 @@ $_['option_guest_payment_address_title']  			= 'Payment details1';
 $_['option_guest_payment_address_description']  	= '';
 $_['option_guest_shipping_address_title']  			= 'Delivery details';
 $_['option_guest_shipping_address_description'] 	= '';
-$_['option_guest_shipping_method_title']  			= 'Shipping method';
+$_['option_guest_shipping_method_title']  			= 'Shipping method1';
 $_['option_guest_payment_method_title'] 			= 'Payment method';
 $_['option_guest_cart_description'] 				= '';
 

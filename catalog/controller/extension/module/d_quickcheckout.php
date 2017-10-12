@@ -209,6 +209,10 @@ $this->load->model('extension/d_quickcheckout/address');
         $data['design']['column_width'][4]  = 7;
 
 
+        if($this->session->data['shipping_method']['code']=='free.free'){
+            $data['account']['guest']['shipping_method']['display'] = 0;
+        }
+
 
         /*sonlexus*/
 
@@ -352,6 +356,9 @@ $this->load->model('extension/d_quickcheckout/address');
                 //'address_id' => (!empty($this->session->data['shipping_address']['address_id'])) ? $this->session->data['shipping_address']['address_id'] : $this->customer->getAddressId(),
             );
         }
+
+
+
 
         $this->session->data['payment_address'] = $this->model_extension_d_quickcheckout_address->prepareAddress($this->session->data['payment_address']);
         $this->session->data['shipping_address'] = $this->model_extension_d_quickcheckout_address->prepareAddress($this->session->data['shipping_address']);

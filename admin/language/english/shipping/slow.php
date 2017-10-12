@@ -1,10 +1,10 @@
 <?php
 // Heading
-$_['heading_title']    = 'ship nhanh';
+$_['heading_title']    = 'ship chậm';
 
 // Text
 $_['text_shipping']    = 'Shipping';
-$_['text_success']     = 'Success: You have modified nhanh shipping!';
+$_['text_success']     = 'Success: You have modified flat rate shipping!';
 $_['text_edit']        = 'Edit Flat Rate Shipping';
 
 // Entry
@@ -15,4 +15,4 @@ $_['entry_status']     = 'Status';
 $_['entry_sort_order'] = 'Sort Order';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify ship nhanh shipping!';
+$_['error_permission'] = 'Warning: You do not have permission to modify flat rate shipping!';

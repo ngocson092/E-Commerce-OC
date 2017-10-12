@@ -3760,7 +3760,7 @@ div#sidebar-main.product-page {
   color: #eb557b;
   font-weight: 100;
 }
-#login_view,#payment_method,#shipping_method_form{
+#login_view,#payment_method{
   display: none;
 }
 #payment_view input{padding: 3px;}
