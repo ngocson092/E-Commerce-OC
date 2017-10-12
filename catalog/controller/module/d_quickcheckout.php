@@ -12,7 +12,7 @@ class ControllerModuleDQuickcheckout extends Controller {
     private $mbooth = '';
     private $config_file = '';
     private $prefix = '';
-    private $error = array(); 
+    private $error = array();
     private $debug = false;
     private $setting = array();
     private $current_setting_id = '';
@@ -68,11 +68,11 @@ class ControllerModuleDQuickcheckout extends Controller {
             }
             $this->document->addScript('catalog/view/javascript/d_quickcheckout/compress/d_quickcheckout.min.js');
         }
-        
+
         $data['json_config'] = json_encode($this->setting);
         $data['config'] = $this->setting;
-        
-        
+
+
         $data['login'] = $this->load->controller('d_quickcheckout/login', $this->setting);
         $data['field'] = $this->load->controller('d_quickcheckout/field', $this->setting);
         $data['payment_address'] = $this->load->controller('d_quickcheckout/payment_address', $this->setting);
@@ -97,12 +97,12 @@ class ControllerModuleDQuickcheckout extends Controller {
 
     }
 
-     
+
     public function initialize(){
 
         $data = $this->model_module_d_quickcheckout->getConfigSetting($this->id, $this->id.'_setting', $this->config->get('config_store_id'), $this->config_file, (!empty($this->session->data['payment_address']['customer_group_id'])) ? $this->session->data['payment_address']['customer_group_id'] : $this->config->get('config_customer_group_id'));
-     
-        
+
+
 
         $this->model_module_d_quickcheckout->logWrite('Initialize:: current_setting_id = '.$this->current_setting_id);
 
@@ -131,22 +131,22 @@ class ControllerModuleDQuickcheckout extends Controller {
             foreach($data['account'][$account]['payment_address']['fields'] as $field){
                 if(isset($field['display']) && $field['display']){
                     $field_count[$account]['payment_address'] += 1;
-                }   
+                }
             }
             foreach($data['account'][$account]['shipping_address']['fields'] as $field){
                 if(isset($field['display']) && $field['display']){
                     $field_count[$account]['shipping_address'] += 1;
-                }   
+                }
             }
             foreach($data['account'][$account]['confirm']['fields'] as $field){
                 if(isset($field['display']) && $field['display']){
                     $field_count[$account]['confirm'] += 1;
-                }   
+                }
             }
         }
 
         $this->model_module_d_quickcheckout->logWrite('Initialize:: count fields for statistics: '.json_encode($field_count));
- 
+
         $this->load->language('module/d_quickcheckout');
         $this->load->language('checkout/checkout');
         $data = $this->model_module_d_quickcheckout->languageFilter($data);
@@ -193,8 +193,8 @@ class ControllerModuleDQuickcheckout extends Controller {
         $data['account']['guest']['payment_address']['fields']['address_1']['title'] = 'Địa Chỉ';
         $data['account']['guest']['payment_address']['fields']['address_1']['type'] = 'textarea';
 
-        $data['account']['guest']['payment_address']['fields']['email']['display'] = 0;
-        $data['account']['guest']['payment_address']['fields']['email']['require'] = 0;
+        $data['account']['guest']['payment_address']['fields']['email']['display'] = 1;
+        $data['account']['guest']['payment_address']['fields']['email']['require'] = 1;
         $data['account']['guest']['payment_address']['fields']['email_confirm']['display'] = 0;
         $data['account']['guest']['payment_address']['fields']['email_confirm']['require'] = 0;
 
@@ -219,12 +219,11 @@ class ControllerModuleDQuickcheckout extends Controller {
         $data['design']['column_width'][4]  = 7;
 
 
-
         /*sonlexus*/
 
 
         $this->session->data['d_quickcheckout'] = $data;
-        $this->setting = $data; 
+        $this->setting = $data;
 
         $this->model_module_d_quickcheckout->logWrite('Initialize:: set $this->session->data[account] = ' . $this->session->data['account']);
         $customer_group_id = (!empty($this->session->data['payment_address']['customer_group_id'])) ? $this->session->data['payment_address']['customer_group_id'] : $this->config->get('config_customer_group_id');
@@ -269,7 +268,7 @@ class ControllerModuleDQuickcheckout extends Controller {
                 'shipping_address' => $this->setSessionValue('shipping_address','payment_address', $data, $account, false),
                 'newsletter' => $this->setSessionValue('newsletter','payment_address', $data, $account, false),
                 //'address_id' => $this->customer->getAddressId(),
-               
+
             );
             $this->session->data['shipping_address'] = array(
                 'firstname' => $this->setSessionValue('firstname','shipping_address', $data, $account, false),
@@ -298,7 +297,7 @@ class ControllerModuleDQuickcheckout extends Controller {
             );
 
         }else{
-        
+
             $this->session->data['guest'] = array(
                 'customer_group_id' => $customer_group_id,
                 'firstname' => $this->setSessionValue('firstname','payment_address', $data, $account),
@@ -310,7 +309,7 @@ class ControllerModuleDQuickcheckout extends Controller {
                 'custom_field' => (!empty($this->session->data['payment_address']['custom_field']['account'])) ? array('account' => $this->session->data['payment_address']['custom_field']['account']) : $this->model_d_quickcheckout_custom_field->setCustomFieldsDefaultSessionData('account', $customer_group_id ),
                 'shipping_address' =>  $this->setSessionValue('shipping_address','payment_address', $data, $account),
                 );
-            
+
             $this->session->data['payment_address'] = array(
                 'firstname' => $this->setSessionValue('firstname','payment_address', $data, $account),
                 'lastname' => $this->setSessionValue('lastname','payment_address', $data, $account),
@@ -341,7 +340,7 @@ class ControllerModuleDQuickcheckout extends Controller {
                 //'address_id' => (!empty($this->session->data['payment_address']['address_id'])) ? $this->session->data['payment_address']['address_id'] : $this->customer->getAddressId(),
 
             );
-             
+
             $this->session->data['shipping_address'] = array(
                 'firstname' =>  $this->setSessionValue('firstname','shipping_address', $data, $account),
                 'lastname' =>  $this->setSessionValue('lastname','shipping_address', $data, $account),
@@ -381,7 +380,7 @@ class ControllerModuleDQuickcheckout extends Controller {
                 }else{
                     $this->session->data['payment_address']['address_id'] = 'new';
                 }
-                
+
             }
 
             if(empty($this->session->data['shipping_address']['address_id'])){
@@ -395,7 +394,7 @@ class ControllerModuleDQuickcheckout extends Controller {
                 }else{
                     $this->session->data['shipping_address']['address_id'] = 'new';
                 }
-                
+
             }
 
             $this->session->data['payment_address']['custom_field'] = (!empty($this->session->data['payment_address']['custom_field'])) ? array('address' => $this->session->data['payment_address']['custom_field']) :  $this->model_d_quickcheckout_custom_field->setCustomFieldsDefaultSessionData('address', $customer_group_id);
@@ -406,10 +405,10 @@ class ControllerModuleDQuickcheckout extends Controller {
         $this->session->data['payment_address'] = $this->session->data['payment_address'] + $this->model_d_quickcheckout_custom_field->getCustomFieldsSessionData('guest', 'account', $customer_group_id );
         $this->session->data['payment_address'] = $this->session->data['payment_address'] + $this->model_d_quickcheckout_custom_field->getCustomFieldsSessionData('payment_address', 'address', $customer_group_id );
         $this->session->data['shipping_address'] = $this->session->data['shipping_address'] + $this->model_d_quickcheckout_custom_field->getCustomFieldsSessionData('shipping_address', 'address', $customer_group_id );
-        
+
         $this->model_module_d_quickcheckout->logWrite('Initialize:: set session payment address'.json_encode($this->session->data['payment_address']));
         $this->model_module_d_quickcheckout->logWrite('Initialize:: set session shipping address'.json_encode($this->session->data['shipping_address']));
-        
+
         $this->model_d_quickcheckout_address->updateTaxAddress();
 
         $this->load->controller('d_quickcheckout/shipping_method/prepare');
@@ -429,9 +428,9 @@ class ControllerModuleDQuickcheckout extends Controller {
             'taxes'  => &$taxes,
             'total'  => &$total
         );
-     
+
         $this->session->data['totals'] = $this->model_d_quickcheckout_order->getTotals($total_data);
-        
+
         $this->load->controller('d_quickcheckout/payment_method/prepare');
 
         $statistic = array('account' => $this->session->data['account'], 'field' => $field_count);
@@ -443,20 +442,20 @@ class ControllerModuleDQuickcheckout extends Controller {
         }
 
         $this->load->controller('d_quickcheckout/confirm/updateOrder');
-        
-        
+
+
         $this->model_module_d_quickcheckout->logWrite('Initialize:: create new Order_id and prepare $this->session->data');
 
         //statistic
-        
-        
+
+
     }
 
     private function setSessionValue($field, $step, $data, $account, $session = true, $default = ''){
         $value = '';
 
         if($session && isset($this->session->data[$step][$field])){
-            $value = $this->session->data[$step][$field]; 
+            $value = $this->session->data[$step][$field];
         }elseif(isset($data['account'][$account][$step]['fields'][$field])){
             if(isset($data['account'][$account][$step]['fields'][$field]['value'])){
                 $value = $data['account'][$account][$step]['fields'][$field]['value'];
@@ -468,12 +467,12 @@ class ControllerModuleDQuickcheckout extends Controller {
         }
 
         return $value;
-        
+
     }
 
     public function createOrder(){
         $order_data = array();
-        
+
         $totals = array();
         $taxes = $this->cart->getTaxes();
         $total = 0;
@@ -485,7 +484,7 @@ class ControllerModuleDQuickcheckout extends Controller {
         );
 
         $this->model_d_quickcheckout_order->getTotals($total_data);
-        
+
         $this->load->language('checkout/checkout');
 
         if(isset($this->session->data['payment_address']['zone_id'])){
@@ -494,11 +493,11 @@ class ControllerModuleDQuickcheckout extends Controller {
             $order_data['payment_zone_id'] = $this->config->get('config_zone_id');
         }
         if(isset($this->session->data['payment_address']['country_id'])){
-           $order_data['payment_country_id'] = $this->session->data['payment_address']['country_id']; 
+           $order_data['payment_country_id'] = $this->session->data['payment_address']['country_id'];
         }else{
            $order_data['payment_country_id'] = $this->config->get('config_country_id');
         }
-        
+
         $order_data['invoice_prefix'] = $this->config->get('config_invoice_prefix');
         $order_data['store_id'] = $this->config->get('config_store_id');
         $order_data['store_name'] = $this->config->get('config_name');

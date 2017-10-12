@@ -184,8 +184,8 @@ $this->load->model('extension/d_quickcheckout/address');
         $data['account']['guest']['payment_address']['fields']['address_1']['title'] = 'Địa Chỉ';
         $data['account']['guest']['payment_address']['fields']['address_1']['type'] = 'textarea';
 
-        $data['account']['guest']['payment_address']['fields']['email']['display'] = 0;
-        $data['account']['guest']['payment_address']['fields']['email']['require'] = 0;
+        $data['account']['guest']['payment_address']['fields']['email']['display'] = 1;
+        $data['account']['guest']['payment_address']['fields']['email']['require'] = 1;
         $data['account']['guest']['payment_address']['fields']['email_confirm']['display'] = 0;
         $data['account']['guest']['payment_address']['fields']['email_confirm']['require'] = 0;
 
