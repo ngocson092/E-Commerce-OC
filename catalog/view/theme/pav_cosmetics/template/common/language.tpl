@@ -4,15 +4,14 @@
     <button type="button" class="btn btn-theme-normal">
     <?php foreach ($languages as $language) { ?>
     <?php if ($language['code'] == $code) { ?>
-    <img class="" src="image/flags/<?php echo $language['image']; ?>" alt="<?php echo $language['name']; ?>" title="<?php echo $language['name']; ?>">
-    <span class="hidden-xs"><?php echo $language['name']; ?></span>
+      <?php echo $language['name']; ?>
     <?php } ?>
     <?php } ?>
     <i class="fa fa-angle-down"></i>
   </button>
     <ul class="dropdown-menu">
       <?php foreach ($languages as $language) { ?>
-      <li><a href="<?php echo $language['code']; ?>"><img src="image/flags/<?php echo $language['image']; ?>" alt="<?php echo $language['name']; ?>" title="<?php echo $language['name']; ?>" /> <?php echo $language['name']; ?></a></li>
+      <li><a href="<?php echo $language['code']; ?>"><?php echo $language['name']; ?></a></li>
       <?php } ?>
     </ul>
   </div>

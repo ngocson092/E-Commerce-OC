@@ -143,9 +143,11 @@ var cart = {
       dataType: 'json',
       success: function(json) {
         $('.alert, .text-danger').remove();
+        window.location.href = "/index.php?route=checkout/checkout";return;
 
         if (json['redirect']) {
           location = json['redirect'];
+
         }
 
         if (json['success']) {

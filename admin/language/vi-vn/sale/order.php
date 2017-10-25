@@ -1,0 +1,131 @@
+<?php
+// Heading
+$_['heading_title']              = 'Đơn hàng';
+
+// Text
+$_['text_list']                  = 'Danh sách đơn hàng';
+$_['text_add']                   = 'Thêm đơn hàng';
+$_['text_edit']                  = 'Sửa đơn hàng';
+$_['text_order_detail']          = 'Chi tiết đơn hàng';
+$_['text_customer_detail']       = 'Chi tiết khách hàng';
+$_['text_option']                = 'Tùy chọn';
+$_['text_store']                 = 'Cửa hàng';
+$_['text_date_added']            = 'Ngày thêm';
+$_['text_payment_method']        = 'Phương thức thanh toán';
+$_['text_shipping_method']       = 'Phương thức giao hàng';
+$_['text_customer']              = 'Khách hàng';
+$_['text_customer_group']        = 'Nhóm khách hàng';
+$_['text_email']                 = 'E-Mail';
+$_['text_telephone']             = 'Điện thoại';
+$_['text_invoice']               = 'Hóa đơn';
+$_['text_reward']                = 'Điểm thưởng';
+$_['text_affiliate']             = 'Đại lý';
+$_['text_order']                 = 'Đơn hàng (#%s)';
+$_['text_payment_address']       = 'Địa chỉ thanh toán';
+$_['text_shipping_address']      = 'Địa chỉ giao hàng';
+$_['text_comment']               = 'Khách hàng góp ý';
+$_['text_history']               = 'Lịch sử đơn hàng';
+$_['text_history_add']           = 'Thêm lịch sử đơn hàng';
+$_['text_account_custom_field']  = 'Tùy biến tài khoản';
+$_['text_payment_custom_field']  = 'Tùy biến Phương thức thanh toán';
+$_['text_shipping_custom_field'] = 'Tùy biến Phương thức giao hàng';
+$_['text_browser']               = 'Trình duyệt';
+$_['text_ip']                    = 'Địa chỉ IP';
+$_['text_forwarded_ip']          = 'Chuyển tiếp IP';
+$_['text_user_agent']            = 'User Agent';
+$_['text_accept_language']       = 'Chấp nhận ngôn ngữ';
+$_['text_order_id']              = 'ID đơn hàng:';
+$_['text_fax']                   = 'Fax:';
+$_['text_website']               = 'Web Site:';
+$_['text_invoice_no']            = 'Số hóa đơn:';
+$_['text_invoice_date']          = 'Ngày ra hóa đơn:';
+$_['text_sku']                   = 'SKU:';
+$_['text_upc']                   = 'UPC:';
+$_['text_ean']                   = 'EAN:';
+$_['text_jan']                   = 'JAN:';
+$_['text_isbn']                  = 'ISBN:';
+$_['text_mpn']                   = 'MPN:';
+$_['text_missing']               = 'Đơn hàng hỏng';
+$_['text_default']               = 'Mặc định';
+$_['text_product']               = 'Thêm sản phẩm';
+$_['text_voucher']               = 'Thêm Voucher';
+$_['text_shipping']              = 'Vận chuyển';
+$_['text_contact']               = 'Liên hệ';
+$_['text_reward_added']          = 'Thành công: đã thêm điểm thưởng!';
+$_['text_reward_removed']        = 'Thành công: đã xóa bỏ điểm thưởng!';
+$_['text_commission_added']      = 'Thành công: đã thêm ủy nhiệm!';
+$_['text_commission_removed']    = 'Thành công: đã xóa bỏ ủy nhiệm!';
+$_['text_restock']               = 'Thành công: Sản phẩm đã được bổ sung!';
+$_['text_upload']                = 'Tài liệu của bạn đã tải lên thành công!';
+$_['text_picklist']              = 'Dispatch Note';
+
+// Column
+$_['column_order_id']       	= 'ID đặt hàng';
+$_['column_customer']       	= 'Khách hàng';
+$_['column_status']         	= 'Trạng thái';
+$_['column_date_added']     	= 'Ngày nhập';
+$_['column_date_modified']  	= 'Ngày thay đổi';
+$_['column_total']          	= 'Tổng';
+$_['column_product']        	= 'Sản phẩm';
+$_['column_model']          	= 'Model';
+$_['column_quantity']       	= 'Số lượng';
+$_['column_price']          	= 'Đơn giá';
+$_['column_comment']        	= 'Chú thích';
+$_['column_notify']         	= 'Thông báo khách hàng';
+$_['column_location']           = 'Location';
+$_['column_reference']          = 'Reference';
+$_['column_action']             = 'Thao tác';
+$_['column_weight']             = 'Cân nặng sản phẩm';
+
+// Entry
+$_['entry_store']             = 'Kho hàng:';
+$_['entry_customer']          = 'Khách hàng:';
+$_['entry_customer_group']    = 'Nhóm khách hàng:';
+$_['entry_firstname']         = 'Tên:';
+$_['entry_lastname']          = 'Họ và tên lót:';
+$_['entry_email']             = 'E-Mail:';
+$_['entry_telephone']         = 'Điện thoại:';
+$_['entry_fax']               = 'Số Fax:';
+$_['entry_address']           = 'Địa chỉ:';
+$_['entry_company']           = 'Công ty:';
+$_['entry_address_1']         = 'Địa chỉ 1:';
+$_['entry_address_2']         = 'Địa chỉ 2:';
+$_['entry_city']              = 'Thành phố:';
+$_['entry_postcode']          = 'Mã bưu điện:';
+$_['entry_country']           = 'Quốc gia:';
+$_['entry_zone']              = 'Vùng / Khu vực:';
+$_['entry_zone_code']         = 'Mã vùng / Khu vực:';
+$_['entry_product']           = 'Chọn sản phẩm:';
+$_['entry_option']            = 'Chọn lựa chọn:';
+$_['entry_quantity']          = 'Số lượng:';
+$_['entry_to_name']           = 'Tên người nhận:';
+$_['entry_to_email']          = 'Email người nhận:';
+$_['entry_from_name']         = 'Tên người gửi:';
+$_['entry_from_email']        = 'EMail người gửi:';
+$_['entry_theme']             = 'Gift Certificate Theme:';
+$_['entry_message']           = 'Thông điệp:';
+$_['entry_amount']            = 'Số lượng:';
+$_['entry_affiliate']         = 'Đại lý:';
+$_['entry_order_status']      = 'Tình trạng đơn đặt hàng:';
+$_['entry_notify']            = 'Thông báo cho khách hàng:';
+$_['entry_override']          = 'Ghi đè';
+$_['entry_comment']           = 'Ý kiến:';
+$_['entry_currency']          = 'Tiền tệ';
+$_['entry_shipping_method']   = 'Phương thức giao hàng';
+$_['entry_payment_method']    = 'Phương thức thanh toán';
+$_['entry_coupon']            = 'Mã giảm giá:';
+$_['entry_voucher']           = 'Voucher:';
+$_['entry_reward']            = 'Thưởng:';
+$_['entry_order_id']          = 'ID Đơn hàng';
+$_['entry_total']             = 'Tổng';
+$_['entry_date_added']        = 'Ngày đặt hàng';
+$_['entry_date_modified']     = 'Ngày sửa lại';
+
+// Help
+$_['help_override']           = 'Cho phép ghi đè nếu đơn hàng của khách hàng bị chặn bởi module chống gian lận.';
+
+// Error
+$_['error_warning']           = 'Cảnh báo: Xin vui lòng kiểm tra các lỗi một cách cẩn thận!';
+$_['error_permission']        = 'Cảnh báo: Bạn không có quyền thay đổi đơn đặt hàng!';
+$_['error_action']            = 'Cảnh báo: Không thể hoàn tất thao tác!';
+$_['error_filetype']          = 'Loại tập tin không hợp lệ!';

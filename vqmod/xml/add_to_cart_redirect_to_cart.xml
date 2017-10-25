@@ -9,7 +9,7 @@
 			<search position="after"><![CDATA[if (json['success']) {]]></search>
 			<add><![CDATA[
 						setTimeout(function(){
-							window.location.href = "/index.php?route=checkout/cart";
+							window.location.href = "/index.php?route=checkout/checkout";
 						},200);
 					]]>
 	  </add>

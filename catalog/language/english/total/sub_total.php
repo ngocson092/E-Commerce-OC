@@ -1,2 +1,2 @@
 <?php
-$_['text_sub_total'] = 'Giá Trước Phí';
+$_['text_sub_total'] = 'sub-total';

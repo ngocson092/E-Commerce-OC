@@ -18,17 +18,16 @@
 		  		<div class="row">
 		  			<div class="col-md-3 col-sm-4 col-xs-3 header-right">
 						<span class="phone"><i class="fa fa-phone"></i> 732-725-8112</span>
-						<div class="hidden">
-							<div class="language pull-left">
+		  			</div>
+		  			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-9 header-left">
+
+						<div class="pull-right">
+							<div class="language pull-right">
 								<?php echo $language; ?>
 							</div>
-							<div class="currency pull-left">
-								<?php echo $currency; ?>
-							</div>
 						</div>
-		  			</div>
-		  			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-9 header-left hidden">
-		  				<ul class="login links pull-right">
+
+		  				<ul class="login links pull-right hidden">
 		  					<?php if ($logged) { ?>
 								<li><a href="<?php echo $logout; ?>"><i class="fa-fw fa fa-unlock"></i><span class="hidden-xs"><?php echo $text_logout; ?></span></a>
 							<?php } else { ?>
@@ -36,7 +35,7 @@
 								<li><a href="<?php echo $login; ?>"><i class="fa-fw fa fa-user"></i><span class="hidden-xs"><?php echo $text_login; ?></span></a></li>
 		    				<?php } ?>
 						</ul>
-		  				<ul class="links pull-right">
+		  				<ul class="links pull-right hidden">
 		  					<li><a href="<?php echo $account; ?>"><i class="fa-fw fa fa-user"></i><span class="hidden-xs"><?php echo $text_account; ?></span></a></li>
 		  					<li><a href="<?php echo $wishlist; ?>"><i class="fa-fw fa fa-list-alt"></i><span class="hidden-xs"><?php echo $text_wishlist; ?></span></a></li>
 		  					<li><a href="<?php echo $shopping_cart; ?>"><i class="fa-fw fa fa-shopping-cart"></i><span class="hidden-xs"><?php echo $text_shopping_cart;; ?></span></a></li>

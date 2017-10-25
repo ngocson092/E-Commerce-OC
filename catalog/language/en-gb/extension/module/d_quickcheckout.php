@@ -1,18 +1,18 @@
-<?php 
+<?php
 
-$_['title_payment_address']  						= 'Thông tin Thanh Toán';
+$_['title_payment_address']  						= 'Payment details';
 $_['description_payment_address']  					= '';
 $_['title_shipping_address']  						= 'Delivery details';
 $_['description_shipping_address'] 					= '';
-$_['title_shipping_method']  						= 'Chọn hình thức Vận Chuyển';
+$_['title_shipping_method']  						= 'Shipping method';
 $_['description_shipping_method'] 					= '';
 $_['title_payment_method'] 							= 'Payment method';
 $_['description_payment_method'] 					= '';
-$_['title_shopping_cart'] 							= 'Sản Phẩm đã chọn';
+$_['title_shopping_cart'] 							= 'Shopping cart';
 $_['description_shopping_сart'] 					= '';
 $_['text_login']									= 'Login';
 
-$_['placeholder_telephone'] 						= '732-725-8112';
+$_['placeholder_telephone'] 					    = '732-725-8112';
 
 $_['error_field_required'] 							= 'This field is required';
 $_['error_valid_telephone'] 						= 'Please enter a valid telephone number';

@@ -1035,7 +1035,7 @@ body.layout-boxed-lg #page {
 }
 #topbar ul li a {
   font-size: 11px;
-  color: #777777;
+  color: #f1efef;
 }
 #topbar ul li:before {
   color: #aaaaaa;
@@ -1054,7 +1054,7 @@ body.layout-boxed-lg #page {
   font-size: 12px;
   width: 100%;
   text-align: center;
-  color: #999999;
+  color: #353535;
   text-transform: initial;
 }
 #topbar .dropdown-menu {
@@ -1242,7 +1242,7 @@ header#header-main{
 .header-right {
   padding-right: 0;
   /* display: none; */
-  width: 100%;
+
   text-align: center;
 }
 .header-right > div {
@@ -1917,6 +1917,7 @@ header#header-main{
   text-decoration: none;
   display: block;
   margin-bottom: 4px;
+  min-height: 4.5em;
 }
 .product-block .product-meta {
   margin: 0 16px;

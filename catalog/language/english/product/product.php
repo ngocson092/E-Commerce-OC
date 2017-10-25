@@ -40,9 +40,9 @@ $_['entry_good']               = 'Good';
 $_['entry_bad']                = 'Bad';
 
 // Tabs
-$_['tab_description']          = 'Mô tả sản phẩm';
+$_['tab_description']          = 'Description';
 $_['tab_attribute']            = 'Specification';
-$_['tab_review']               = 'Đánh giá (%s)';
+$_['tab_review']               = 'Review (%s)';
 
 // Error
 $_['error_name']               = 'Warning: Review Name must be between 3 and 25 characters!';

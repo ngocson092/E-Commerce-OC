@@ -1,2 +1,2 @@
 <?php
-$_['text_total'] = 'Tổng Cộng';
+$_['text_total'] = 'Total';
