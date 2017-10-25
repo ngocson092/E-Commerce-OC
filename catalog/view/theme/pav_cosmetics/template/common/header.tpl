@@ -19,7 +19,7 @@ $helper->addScript( 'catalog/view/javascript/jquery/jquery-2.1.1.min.js' );
 $helper->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
 $helper->addScript( 'catalog/view/javascript/bootstrap/js/bootstrap.min.js' );
 $helper->addScript( 'catalog/view/javascript/common.js' );
-$helper->addScript( 'catalog/view/theme/'.$themeName.'/javascript/common.js' );
+$helper->addScript( 'catalog/view/theme/'.$themeName.'/javascript/common.js'.'?version='.VERSION_ );
 if( isset($themeConfig['catalog_mode']) && $themeConfig['catalog_mode'] ){
   $cart = null;   
 } 
